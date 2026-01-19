@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Rubik Gemstones;
+    margin: 0;
+    background-image: linear-gradient(to right, #FFA07A, #FF6347);
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background-image: linear-gradient(to right, #87CEFA, #4169E1);
+}
+
+.navbar {
+    display: flex;
+    background-color: darkgrey;
+}
+
+.navbar a {
+    color: aquamarine;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: chocolate;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: cornsilk;
+    padding: 20px;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    transition-delay: 1s;
+}
+
+.photo:hover {
+    transform: rotate(20deg);
+}
+
+.main {
+    flex: 70%;
+    background-color: cornsilk;
+    padding: 20px;
+}
+
+.fakeimg {
+    background-image: linear-gradient(to right, #FFE4C4, #8B4513	);
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
